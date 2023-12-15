@@ -8,8 +8,9 @@
     "build": "echo \"The build step is not required when using JavaScript!\" && exit 0",
     "cdk:synth": "cdk synth",
     "cdk:diff": "cdk diff",
-    "cdk:deploy": "npm run cdk:synth; cdk deploy",
+    "cdk:deploy": "npm run cdk:synth; cdk deploy --parameters subscriptionEmail='$EMAIL_ADDRESS'",
     "cdk:destroy": "cdk destroy",
+    "read:env": "echo $EMAIL_ADDRESS",
     "cdk": "cdk",
     "test": "jest"
   },

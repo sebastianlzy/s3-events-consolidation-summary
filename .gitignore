@@ -1,0 +1,6 @@
+s3-events-consolidation-summary.iml
+.idea
+**/node_modules/*
+**/.env
+
+**/package-lock.json
